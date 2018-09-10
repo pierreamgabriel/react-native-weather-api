@@ -7,7 +7,7 @@ NOTE: This module uses the apixu.com API, so in order to use it, you need to cre
 Run: `$ npm install react-native-weather-api --save`
 
 ## Editing the editable.js file
-Go to the `node_modules/react-native-weather-api` folder inside your project folder and open the editable.js file. Put your apixu key in the `KEY` variable. You can also edit `errorTitle` and `errorMessage` according to your needs. The content of these two variable forms the message shown when location isn't activated on the device.
+Go to the `node_modules/react-native-weather-api` inside your project folder and open the editable.js file. Put your apixu key in the `KEY` variable. You can also edit `errorTitle` and `errorMessage` according to your needs. The content of these two variable forms the message shown when location isn't activated on the device.
 ## Projects with Native Code Only
 This section only applies to projects made with `react-native init` or to those made with Create React Native App which have since ejected.
 ### Android
