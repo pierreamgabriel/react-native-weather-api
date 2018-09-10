@@ -1,0 +1,21 @@
+{
+  "name": "react-native-weather-api",
+  "version": "1.0.0",
+  "description": "Real-time weather information for any city in the world.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierremacedo/react-native-weather-api.git"
+  },
+  "keywords": [
+    "react-native",
+    "weather",
+    "weather-api"
+  ],
+  "author": "Pierre Macedo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pierremacedo/react-native-weather-api/issues"
+  },
+  "homepage": "https://github.com/pierremacedo/react-native-weather-api#readme"
+}
