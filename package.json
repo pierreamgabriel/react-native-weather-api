@@ -1,6 +1,6 @@
 {
   "name": "react-native-weather-api",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Real-time weather information for any city in the world.",
   "main": "index.js",
   "repository": {
