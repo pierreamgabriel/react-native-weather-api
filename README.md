@@ -4,7 +4,7 @@ With this module you can easily show real-time weather information for over 4 mi
 # Installation
 NOTE: This module uses the apixu.com API, so in order to use it, you need to create an account on https://www.apixu.com/signup.aspx and get your unique KEY. Free accounts are allowed to perform 10,000 requests per month.
 
-Run: `$ npm install react-native-weather-api --save`
+`npm install react-native-weather-api --save`
 
 ## Editing the editable.js file
 Go to `node_modules/react-native-weather-api` inside your project folder and open the `editable.js` file. Put your apixu key in the `KEY` variable. You can also edit `errorTitle` and `errorMessage` according to your needs. The content of these two variables forms the message shown when location isn't activated on the device.
