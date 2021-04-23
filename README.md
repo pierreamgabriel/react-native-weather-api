@@ -1,3 +1,6 @@
+# DEPRECATED - no longer actively maintained
+Since the Apixu API changed to weatherstack, this React Native module no longer works.
+
 # React Native Weather API
 With this module you can easily show real-time weather information for over 4 million cities and towns in your Android and iOS app. 
 
