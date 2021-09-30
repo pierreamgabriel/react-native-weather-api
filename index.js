@@ -1,6 +1,5 @@
-import {getLocation} from "./checklocation";
-import {getWeather, getData} from "./getweather";
-import {errorTitle, errorMessage} from "./editable";
+import {getLocation} from "./location";
+import {getWeather, dailyForecast, showWeather} from "./weather";
 
 
-export {getLocation, getWeather, getData, errorTitle, errorMessage};
+export {getLocation, getWeather, dailyForecast, showWeather};

@@ -1,21 +1,27 @@
 {
   "name": "react-native-weather-api",
-  "version": "2.0.0",
-  "description": "Real-time weather information for any city in the world.",
+  "version": "3.0.0",
+  "description": "Real-time weather information for any location on Earth, including over 200,000 cities.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pierremacedo/react-native-weather-api.git"
+    "url": "https://github.com/pierremacedo/react-native-weather-api.git"
+  },
+  "dependencies": {
+    "@react-native-community/geolocation": "^2.0.2"
   },
   "keywords": [
-    "react-native",
+    "React Native",
     "weather",
-    "weather-api"
+    "weather api"
   ],
-  "author": "Pierre Macedo",
-  "license": "MIT",
+  "author": {
+	 "name": "Pierre Macedo",
+	 "email": "pierremacedodev@gmail.com"
+  },
+  "license": "GNU General Public License v3.0",
   "bugs": {
     "url": "https://github.com/pierremacedo/react-native-weather-api/issues"
   },
-  "homepage": "https://github.com/pierremacedo/react-native-weather-api#readme"
+  "homepage": "https://github.com/pierremacedo/react-native-weather-api"
 }
