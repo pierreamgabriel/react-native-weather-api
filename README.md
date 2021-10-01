@@ -7,6 +7,11 @@ Real-time weather information for any location on Earth, including over 200,000 
 ```bash
 npm install react-native-weather-api
 ```
+You must also install @react-native-community/geolocation:
+
+```bash
+npm install @react-native-community/geolocation
+```
 
 ## Permission
 
