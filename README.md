@@ -166,10 +166,3 @@ dailyForecast({
 ```
 
 The `dailyForecast` function only accepts latitude and longitude to determine the location. In the example, we retrieved the minimum and maximum temperature and the weather description for the current day. If we wanted information for the following day, we'd change `daily[0]` to `daily[1]`, and so on up to `daily[7]`. To see all the fields available besides the ones we used in this section, create an `alert(JSON.stringify(data, null, 4))`, but don't forget to remove it before building for production.
-
-## Contact me
-
-For job opportunities, you can contact me at pierremacedodev@gmail.com. For issues or feature requests, please use the plugin repository.
-
-## Donate [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=W93EHM59W7BA8)
-It's hard to keep plugins updated and bug-free without financial support. If you found this plugin useful, consider donating.
