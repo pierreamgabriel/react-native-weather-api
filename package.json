@@ -1,11 +1,18 @@
 {
   "name": "react-native-weather-api",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Real-time weather information for any location on Earth, including over 200,000 cities.",
-  "main": "index.js",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "react-native": "src/index.js",
+  "types": "lib/typescript/index.d.ts",
+  "files": [
+    "lib/",
+    "src/"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/pierremacedo/react-native-weather-api.git"
+    "url": "https://github.com/pierreamgabriel/react-native-weather-api.git"
   },
   "keywords": [
     "React Native",
@@ -13,12 +20,27 @@
     "weather api"
   ],
   "author": {
-	 "name": "Pierre Macedo",
-	 "email": "pierremacedodev@gmail.com"
+    "name": "Pierre Gabriel",
+    "email": "pierregabrieldev@gmail.com"
   },
-  "license": "GNU General Public License v3.0",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pierremacedo/react-native-weather-api/issues"
+    "url": "https://github.com/pierreamgabriel/react-native-weather-api/issues"
   },
-  "homepage": "https://github.com/pierremacedo/react-native-weather-api"
+  "homepage": "https://github.com/pierreamgabriel/react-native-weather-api",
+  "scripts": {
+    "build": "bob build"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "dependencies": {
+    "@react-native-community/geolocation": "^3.0.4"
+  }
 }
