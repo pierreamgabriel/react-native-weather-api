@@ -1,8 +1,10 @@
-var current;
+import {CallProps, WeatherData} from './types';
 
-export async function getWeather(args) {
-  var result;
-  var URL;
+let current: WeatherData;
+
+export async function getWeather(args: CallProps) {
+  let result;
+  let URL;
 
   if (args.city != null) {
     URL =
@@ -52,9 +54,9 @@ export async function getWeather(args) {
   return result;
 }
 
-export async function dailyForecast(args) {
-  var result;
-  var URL =
+export async function dailyForecast(args: CallProps) {
+  let result;
+  let URL =
     'https://api.openweathermap.org/data/2.5/onecall?lat=' +
     args.lat +
     '&lon=' +
@@ -75,7 +77,30 @@ export async function dailyForecast(args) {
   return result;
 }
 
-export function showWeather() {
+export async function fiveDaysForecast(args: CallProps) {
+  let result;
+  let URL =
+    'https://api.openweathermap.org/data/2.5/forecast?lat=' +
+    args.lat +
+    '&lon=' +
+    args.lon +
+    '&appid=' +
+    args.key +
+    '&units=' +
+    args.unit +
+    '&lang=' +
+    args.lang;
+
+  await fetch(URL)
+    .then(res => res.json())
+    .then(data => {
+      result = data;
+    });
+
+  return result;
+}
+
+export function showWeather(this: any) {
   this.name = current.name;
   this.country = current.sys.country;
   this.temp = current.main.temp;

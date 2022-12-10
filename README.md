@@ -44,8 +44,8 @@ import { getWeather, dailyForecast, showWeather, getLocation } from 'react-nativ
 When using coordinates, you can't pass the city and ZIP code parameters.
 
 ```javascript
-var temp;
-var wind;
+let temp;
+let wind;
 
 getLocation().then((location) => {
 			
@@ -58,7 +58,7 @@ getWeather({
 
 }).then(() => {
 
-	var data = new showWeather();
+	let data = new showWeather();
 	temp = data.temp;
 	wind = data.wind;
 });
@@ -71,8 +71,8 @@ getWeather({
 When calling by city name, you can't pass the latitude, longitude, and ZIP code parameters.
 
 ```javascript
-var temp;
-var wind;
+let temp;
+let wind;
 
 getWeather({
 			
@@ -82,7 +82,7 @@ getWeather({
 
 }).then(() => {
 
-	var data = new showWeather();
+	let data = new showWeather();
 	temp = data.temp;
 	wind = data.wind;
 });
@@ -95,8 +95,8 @@ This method doesn't seem to work with all countries. For example, the API didn't
 Don't pass the latitude, longitude, and city parameters.
 
 ```javascript
-var temp;
-var wind;
+let temp;
+let wind;
 
 getWeather({
 			
@@ -106,7 +106,7 @@ getWeather({
 
 }).then(() => {
 
-	var data = new showWeather();
+	let data = new showWeather();
 	temp = data.temp;
 	wind = data.wind;
 });
@@ -142,9 +142,9 @@ getWeather({
 With only one call, you can get weather information for 7 days plus the current day. 
 
 ```javascript
-var temp_min;
-var temp_max;
-var description;
+let temp_min;
+let temp_max;
+let description;
 
 getLocation().then((location) => {
 			
@@ -166,3 +166,27 @@ dailyForecast({
 ```
 
 The `dailyForecast` function only accepts latitude and longitude to determine the location. In the example, we retrieved the minimum and maximum temperature and the weather description for the current day. If we wanted information for the following day, we'd change `daily[0]` to `daily[1]`, and so on up to `daily[7]`. To see all the fields available besides the ones we used in this section, create an `alert(JSON.stringify(data, null, 4))`, but don't forget to remove it before building for production.
+
+## 5 day / 3 hour forecast data
+
+```javascript
+let temp;
+let description;
+
+getLocation().then((location) => {
+			
+fiveDaysForecast({
+
+	key: "your_key",
+	lat: location.coords.latitude,
+	lon: location.coords.longitude,
+	unit: "metric"
+
+}).then((data) => {
+
+	temp = data.list[0].main.temp;
+	description = data.list[0].weather[0].description;
+});
+
+});
+```
