@@ -169,6 +169,8 @@ The `dailyForecast` function only accepts latitude and longitude to determine th
 
 ## 5 day / 3 hour forecast data
 
+Forecast for 5 days with data every 3 hours.
+
 ```javascript
 let temp;
 let description;
