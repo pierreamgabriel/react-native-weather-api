@@ -1,6 +1,6 @@
 {
   "name": "react-native-weather-api",
-  "version": "3.4.0",
+  "version": "3.4.1",
   "description": "Real-time weather information for any location on Earth, including over 200,000 cities.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",

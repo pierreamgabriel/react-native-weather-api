@@ -76,6 +76,15 @@ export type WeatherData = {
   icon: string;
 };
 
+export type ShowWeatherProps = {
+  name: string;
+  country: string;
+  wind: number;
+  weather: [{ description: string; icon: string }];
+  description: string;
+  icon: string;
+} & WeatherData['main'];
+
 export type GeolocationResponse = {
   coords: {
     latitude: number;

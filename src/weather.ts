@@ -1,4 +1,4 @@
-import {CallProps, WeatherData} from './types';
+import {CallProps, ShowWeatherProps, WeatherData} from './types';
 
 let current: WeatherData;
 
@@ -100,7 +100,7 @@ export async function fiveDaysForecast(args: CallProps) {
   return result;
 }
 
-export function showWeather(this: any) {
+export function showWeather(this: ShowWeatherProps) {
   this.name = current.name;
   this.country = current.sys.country;
   this.temp = current.main.temp;
